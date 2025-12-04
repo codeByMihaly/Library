@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1 id="h1-id">Reading books is a gift to your mind and health!</h1>
+    <button id="addNew">Add new</button>
+  </header>
+  <main class="container">
+    <div class="blocks">
+      <div id="b1" class="block">
+        <p class="delete-btn">X</p>
+        <p class="titleBook">Title: The Hobbit</p>
+        <p class="authorBook">Author: J.R.R. Tolkien</p>
+        <p class="pagesBook">Pages: 310</p>
+        <button class="read-btn">Not done!</button>
+      </div>
+      <div id="b2" class="block">
+        <p class="delete-btn">X</p>
+        <p class="titleBook">Title: Harry Potter and the Philosopher's Stone</p>
+        <p class="authorBook">Author: J.K. Rowling</p>
+        <p class="pagesBook">Pages: 309</p>
+        <button class="read-btn">Not done!</button>
+      </div>
+      <div class="block">
+        <p class="delete-btn">X</p>
+        <p class="titleBook">Title: The Fellowship of the Ring Lord of the Rings #1</p>
+        <p class="authorBook">Author: J.R.R. Tolkien</p>
+        <p class="pagesBook">Pages: 423</p>
+        <button class="read-btn">Not done!</button>
+      </div>
+      <div class="block">
+        <p class="delete-btn">X</p>
+        <p class="titleBook">Title: A Game of Thrones</p>
+        <p class="authorBook">Author: George R.R. Martin</p>
+        <p class="pagesBook">Pages: 694</p>
+        <button class="read-btn">Not done!</button>
+      </div>
+      <div class="block">
+        <p class="delete-btn">X</p>
+        <p class="titleBook">Title: The Silmarillion</p>
+        <p class="authorBook">Author: J.R.R. Tolkien</p>
+        <p class="pagesBook">Pages: 365</p>
+        <button class="read-btn">Not done!</button>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <p id="footer-para">Made by CodeByMihaly</p>
+  </footer>
+  <form action="" method="post" class="form" hidden>
+    <fieldset class="allForm">
+      <legend id="legend">Add your favorite book</legend>
+      <p id="delete-form-btn">X</p>
+      <label class="allLabels" for="title">Book's title:</label>
+      <input class="allInputs" id="title" name="Title" type="text">
+      <label class="allLabels" for="author">Book's author:</label>
+      <input class="allInputs" id="author" name="Author" type="text">
+      <label class="allLabels" for="pages">Book's pages:</label>
+      <input class="allInputs" id="pages" name="Pages" type="number">
+      <button class="submit-btn" type="button">Add</button>
+    </fieldset>
+  </form>
+
+  <script src=script.js></script>
+</body>
+
+</html>
