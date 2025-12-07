@@ -1,14 +1,13 @@
 let addBtn = document.getElementById("addNew");
 let form = document.querySelector(".form");
-let deleteBtn = document.querySelectorAll(".delete-btn");
-let deleteFormBtn = document.getElementById("delete-form-btn");
 let titleName = document.getElementById("title");
 let authorName = document.getElementById("author");
 let pagesName = document.getElementById("pages");
-let submitBtn = document.querySelector(".submit-btn");
-let readBtn = document.querySelectorAll(".read-btn");
 let b1 = document.getElementById("b1");
 let blocks = document.querySelector(".blocks");
+
+/* Read button toggle */
+let readBtn = document.querySelectorAll(".read-btn");
 
 readBtn.forEach(btn => {
   btn.addEventListener("click", function() {
@@ -24,14 +23,22 @@ readBtn.forEach(btn => {
   });
 });
 
+/* Add book action */
+let submitBtn = document.querySelector(".submit-btn");
+
 submitBtn.addEventListener("click", function(e) {
   e.preventDefault();
   addBookToLibrary();
 });
 
+/* Input gonna pop up */
+
 addBtn.addEventListener("click", () => {
   form.hidden = !form.hidden;
 });
+
+/* Delete button action */
+let deleteBtn = document.querySelectorAll(".delete-btn");
 
 deleteBtn.forEach((btn) => {
   btn.addEventListener("click", function () {
@@ -39,9 +46,14 @@ deleteBtn.forEach((btn) => {
   });
 });
 
+/* Form x */
+let deleteFormBtn = document.getElementById("delete-form-btn");
+
 deleteFormBtn.addEventListener("click", function () {
     form.hidden = !form.hidden;
 });
+
+/* Library container */
 
 const myLibrary = [];
 
@@ -56,6 +68,8 @@ function addBookToLibrary() {
   let author = authorName.value;
   let pages = pagesName.value;
 
+  /* Must fill every input */
+
   if(title === "" || author === "" || pages === "") {
     return alert("You must complete every section!")
   }
@@ -68,6 +82,8 @@ function addBookToLibrary() {
   newBlock.id = newBook.id;
 
   let para = newBlock.querySelectorAll("p");
+
+  /* Add text content to the new block */
 
   para[1].textContent = `Title: ${newBook.title}`;
   para[2].textContent = `Author: ${newBook.author}`;
