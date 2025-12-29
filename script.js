@@ -111,4 +111,5 @@ function addBookToLibrary() {
   pagesName.value = "";
 
   form.hidden = true;
+  
 }
