@@ -40,4 +40,3 @@ All data is stored in memory, making this a pure front‑end JavaScript project.
 
 <img width="2528" height="1341" alt="img1" src="https://github.com/user-attachments/assets/522119f7-555a-4618-9f81-3417d8a1c1ad" />
 <img width="2528" height="1345" alt="img2" src="https://github.com/user-attachments/assets/cf538894-cf14-4129-91f4-c4d115b9070b" />
-
