@@ -158,9 +158,6 @@ body {
   text-align: center;
   padding: 2em 0;  
   text-decoration: underline;
-  position: fixed;
-  bottom: 0;
-  left: 0;
   width: 100%;
 }
 
